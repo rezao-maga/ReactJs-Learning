@@ -31,7 +31,7 @@ export function CartItemDetails({ loadCart, cartItem, deliveryOptions }) {
   return (
     <>
       <div className="cart-item-details-grid">
-        <img className="product-image" src={cartItem.product.image} />
+        <img className="product-image" src={`/${cartItem.product.image}`} />
 
         <div className="cart-item-details">
           <div className="product-name">{cartItem.product.name}</div>

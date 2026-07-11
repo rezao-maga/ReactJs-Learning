@@ -1,4 +1,4 @@
-import { Header } from "../../components/Header.jsx";
+import { Header } from "../../components/Header.tsx";
 import "./OrdersPage.css";
 import { OrdersGrid } from "./OrdersGrid.jsx";
 import { useState, useEffect, Fragment } from "react";
@@ -20,8 +20,8 @@ export function OrdersPage({ cart, loadCart }) {
       <Header cart={cart} />
       <link
         rel="icon"
-        type="image/svg+xml"
-        href="../public/favicon/orders-favicon.png"
+        type="image/png"
+        href="/favicon/orders-favicon.png"
       />
       <div className="orders-page">
         <div className="page-title">Your Orders</div>

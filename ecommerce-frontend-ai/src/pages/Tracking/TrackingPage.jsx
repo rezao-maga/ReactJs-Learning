@@ -1,5 +1,5 @@
 import "./TrackingPage.css";
-import { Header } from "../../components/Header.jsx";
+import { Header } from "../../components/Header.tsx";
 import { Link, useParams } from "react-router";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -49,8 +49,8 @@ export function TrackingPage({ cart }) {
       <Header cart={cart} />
       <link
         rel="icon"
-        type="image/svg+xml"
-        href="../public/favicon/tracking-favicon.png"
+        type="image/png"
+        href="/favicon/tracking-favicon.png"
       />
       <div className="tracking-page">
         <div className="order-tracking">
@@ -65,7 +65,7 @@ export function TrackingPage({ cart }) {
 
           <div className="product-info">Quantity: {orderProduct.quantity}</div>
 
-          <img className="product-image" src={orderProduct.product.image} />
+          <img className="product-image" src={`/${orderProduct.product.image}`} />
 
           <div className="progress-labels-container">
             <div className={`progress-label ${isPreparing && 'current-status'}`}>Preparing</div>

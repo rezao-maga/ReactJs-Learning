@@ -1,7 +1,7 @@
 import axios from "axios";
 import "./HomePage.css";
 import { ProductsGrid } from "./ProductsGrid.jsx";
-import { Header } from "../../components/Header.jsx";
+import { Header } from "../../components/Header.tsx";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router";
 
@@ -29,8 +29,8 @@ export function HomePage({ cart, loadCart }) {
       <title>Ecomerce Project</title>
       <link
         rel="icon"
-        type="image/svg+xml"
-        href="../public/favicon/home-favicon.png"
+        type="image/png"
+        href="/favicon/home-favicon.png"
       />
       <div className="home-page">
         <ProductsGrid products={products} loadCart={loadCart} />

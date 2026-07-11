@@ -77,7 +77,6 @@ export function Header({ cart }: HeaderProps) {
           </NavLink>
         </div>
       </div>
-      ;
     </>
   );
 }
